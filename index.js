@@ -8,8 +8,8 @@
 'use strict'
 
 var deprecate = require('depd')('cookies')
-var Keygrip = require('keygrip')
-var http = require('http')
+var Keygrip = require('@edge-js/keygrip')
+// var http = require('http')
 
 /**
  * RegExp to match field-content in RFC 7230 sec 3.2
@@ -138,7 +138,7 @@ Cookies.prototype.set = function(name, value, opts) {
     pushCookie(headers, cookie)
   }
 
-  var setHeader = res.set ? http.OutgoingMessage.prototype.setHeader : res.setHeader
+  var setHeader = res.setHeader
   setHeader.call(res, 'Set-Cookie', headers)
   return this
 };

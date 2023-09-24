@@ -1,5 +1,5 @@
 {
-  "name": "cookies",
+  "name": "@edge-js/cookies",
   "description": "Cookies, optionally signed using Keygrip.",
   "version": "0.8.0",
   "author": "Jed Schmidt <tr@nslator.jp> (http://jed.is)",
@@ -7,10 +7,10 @@
     "Douglas Christopher Wilson <doug@somethingdoug.com>"
   ],
   "license": "MIT",
-  "repository": "pillarjs/cookies",
+  "repository": "edgejs/cookies",
   "dependencies": {
     "depd": "~2.0.0",
-    "keygrip": "~1.1.0"
+    "@edge-js/keygrip": "~1.1.1"
   },
   "devDependencies": {
     "eslint": "7.32.0",
